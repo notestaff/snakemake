@@ -35,7 +35,7 @@ if not isinstance(sys.stdout, _io.TextIOWrapper):
 # especially when doing `sh -c 'long script from user'`. On Linux, it's
 # hardcoded in the kernel as 32 pages, or 128kB. On OSX it appears to be
 # close to `getconf ARG_MAX`, about 253kb.
-MAX_ARG_LEN = 16 * 4096 - 1
+MAX_ARG_LEN = 1 * 4096 - 1
 
 
 class shell:
